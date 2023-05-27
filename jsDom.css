@@ -1,0 +1,77 @@
+
+
+
+#img1{
+  width: 10vw;
+  height: 10vw;
+  
+  /* url till bild, källa kan ändras med javascript */
+  src: url("https://preview.redd.it/akiinn6djtd21.jpg?auto=webp&s=52cd4cd252e44b0c06e80d190edb032e39492a76");
+}
+
+/* class för den text och de element längst upp på sidan*/
+#header{
+  display: flex;
+  width: auto;
+  height: auto;
+  align-content:center;
+  flex-direction: column;
+  padding: 1vw;
+}
+
+#time{
+  font-size: 2vh;
+}
+
+
+/* Alla knappar som finns i div containern */
+.button{
+  flex: 0 0 calc((100% / 3) - 30px); 
+  background-color: cyan;
+  padding: 10px;
+  margin: 15px;
+  border: 1px solid gray;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  width: 5vh;
+  height: 10vh;
+  font-size: 70%;
+  border-radius: 2vh;
+
+  
+}
+
+/* div containern som innehåller knappar */
+#container{
+  display: inline-flex;
+  flex-wrap: wrap;
+  flex-direction:row ;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  background-color: beige;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  width: 35vw;
+  height: 45vh;
+  transform: translate(-50%, -50%);
+  border-radius: 1vh;
+}
+
+/* skapar on hover effect */
+.button:hover{
+  background-color: violet;
+}
+
+
+#thxMsg{
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10vh; 
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 2vh;
+}
+
+ 
