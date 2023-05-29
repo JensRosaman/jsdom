@@ -20,9 +20,14 @@
 }
 
 #time{
-  font-size: 2vh;
+  font-size: 2vw;
 }
 
+@media screen and (max-height: 440px) {
+  #time{
+    font-size: 1vw;
+  }
+}
 
 /* Alla knappar som finns i div containern */
 .button{
@@ -63,15 +68,19 @@
   background-color: violet;
 }
 
-
+#vibes , #time{
+  color: yellowgreen;
+}
 #thxMsg{
-  position: fixed;
+  position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 10vh; 
+  bottom: 1vh;
+
   text-align: center;
   margin-top: 0;
   margin-bottom: 2vh;
+  color: yellow;
 }
 
  
